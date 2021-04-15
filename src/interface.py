@@ -6,16 +6,17 @@ from matplotlib.widgets import Slider
 
 
 if __name__ == "__main__":
+    data_folder = ""
     dimention4 = True
 
     # sufix = "mono"
     sufix = "isot"
     # sufix = "adia"
-    u = np.load("U_" + sufix + ".npy")
-    v = np.load("V_" + sufix + ".npy")
-    T = np.load("T_" + sufix + ".npy")
-    x_vec = np.load("x.npy")
-    t_vec = np.load("t.npy")
+    u = np.load(data_folder + "U_" + sufix + ".npy")
+    v = np.load(data_folder + "V_" + sufix + ".npy")
+    T = np.load(data_folder + "T_" + sufix + ".npy")
+    x_vec = np.load(data_folder + "x.npy")
+    t_vec = np.load(data_folder + "t.npy")
 
     BarLength = x_vec[-1]
     Nx = len(x_vec) - 1

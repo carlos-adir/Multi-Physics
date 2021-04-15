@@ -6,7 +6,7 @@ if __name__ == "__main__":
     ###########################################
     # Opening informations from file
     #####################
-    data_folder = "../data/"
+    data_folder = ""
     try:
         U_mono = np.load(data_folder + "U_mono.npy")
         V_mono = np.load(data_folder + "V_mono.npy")
